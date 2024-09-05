@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var myThings = ThingStore()
+  @StateObject private var myThings = ThingStore()
   @State private var showAddThing = false
   
   var body: some View {
@@ -29,7 +29,7 @@ struct ContentView: View {
       }
     }
     .sheet(isPresented: $showAddThing) {
-      AddThingView(someThings: $myThings)
+      AddThingView(someThings: myThings)
     }
   }
 }

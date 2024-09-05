@@ -1,5 +1,5 @@
 import Foundation
 
-struct ThingStore {
-  var things: [String] = []
+final class ThingStore: ObservableObject {
+  @Published var things: [String] = []
 }

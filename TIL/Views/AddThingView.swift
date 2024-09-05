@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AddThingView: View {
   @State private var thing = ""
-  @Binding var someThings: ThingStore
+  @ObservedObject var someThings: ThingStore
   @FocusState private var thingIsFocused: Bool
   @Environment(\.dismiss) var dismiss
   
@@ -27,5 +27,5 @@ struct AddThingView: View {
 }
 
 #Preview {
-  AddThingView(someThings: .constant(ThingStore()))
+  AddThingView(someThings: ThingStore())
 }
