@@ -13,6 +13,7 @@
 		C3A20B042C860AFB00CC8ADE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A20B032C860AFB00CC8ADE /* ContentView.swift */; };
 		C3A20B062C860AFC00CC8ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A20B052C860AFC00CC8ADE /* Assets.xcassets */; };
 		C3A20B092C860AFC00CC8ADE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A20B082C860AFC00CC8ADE /* Preview Assets.xcassets */; };
+		C3B99BF32C8B952600306DC3 /* ThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B99BF22C8B952600306DC3 /* ThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C3A20B032C860AFB00CC8ADE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3A20B052C860AFC00CC8ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3A20B082C860AFC00CC8ADE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3B99BF22C8B952600306DC3 /* ThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			children = (
 				C3A20B032C860AFB00CC8ADE /* ContentView.swift */,
 				C38358DA2C8903DC007288EF /* AddThingView.swift */,
+				C3B99BF22C8B952600306DC3 /* ThingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				C3A20B042C860AFB00CC8ADE /* ContentView.swift in Sources */,
 				C3A20B022C860AFB00CC8ADE /* TILApp.swift in Sources */,
 				C38358D72C88FEB2007288EF /* ThingStore.swift in Sources */,
+				C3B99BF32C8B952600306DC3 /* ThingView.swift in Sources */,
 				C38358DB2C8903DC007288EF /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

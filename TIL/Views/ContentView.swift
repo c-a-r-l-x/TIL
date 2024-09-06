@@ -11,8 +11,10 @@ struct ContentView: View {
           Text("Add acronyms you learn")
             .foregroundColor(.gray)
         }
-        ForEach(myThings.things, id: \.self) { thing in
-          Text(thing)
+        ForEach(myThings.things) { thing in
+          NavigationLink(destination: ThingView(thing: thing)) {
+            Text(thing.short)
+          }
         }
         Spacer()
       }
