@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C38358D72C88FEB2007288EF /* ThingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38358D62C88FEB2007288EF /* ThingStore.swift */; };
+		C38358DB2C8903DC007288EF /* AddThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38358DA2C8903DC007288EF /* AddThingView.swift */; };
 		C3A20B022C860AFB00CC8ADE /* TILApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A20B012C860AFB00CC8ADE /* TILApp.swift */; };
 		C3A20B042C860AFB00CC8ADE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A20B032C860AFB00CC8ADE /* ContentView.swift */; };
 		C3A20B062C860AFC00CC8ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A20B052C860AFC00CC8ADE /* Assets.xcassets */; };
 		C3A20B092C860AFC00CC8ADE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A20B082C860AFC00CC8ADE /* Preview Assets.xcassets */; };
+		C3B99BF32C8B952600306DC3 /* ThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B99BF22C8B952600306DC3 /* ThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C38358D62C88FEB2007288EF /* ThingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingStore.swift; sourceTree = "<group>"; };
+		C38358DA2C8903DC007288EF /* AddThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThingView.swift; sourceTree = "<group>"; };
 		C3A20AFE2C860AFB00CC8ADE /* TIL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A20B012C860AFB00CC8ADE /* TILApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TILApp.swift; sourceTree = "<group>"; };
 		C3A20B032C860AFB00CC8ADE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3A20B052C860AFC00CC8ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3A20B082C860AFC00CC8ADE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3B99BF22C8B952600306DC3 /* ThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C38358D82C88FF7A007288EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C38358D62C88FEB2007288EF /* ThingStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C38358D92C88FFAF007288EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3A20B032C860AFB00CC8ADE /* ContentView.swift */,
+				C38358DA2C8903DC007288EF /* AddThingView.swift */,
+				C3B99BF22C8B952600306DC3 /* ThingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C3A20AF52C860AFB00CC8ADE = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				C3A20B012C860AFB00CC8ADE /* TILApp.swift */,
-				C3A20B032C860AFB00CC8ADE /* ContentView.swift */,
+				C38358D82C88FF7A007288EF /* Model */,
+				C38358D92C88FFAF007288EF /* Views */,
 				C3A20B052C860AFC00CC8ADE /* Assets.xcassets */,
 				C3A20B072C860AFC00CC8ADE /* Preview Content */,
 			);
@@ -139,6 +164,9 @@
 			files = (
 				C3A20B042C860AFB00CC8ADE /* ContentView.swift in Sources */,
 				C3A20B022C860AFB00CC8ADE /* TILApp.swift in Sources */,
+				C38358D72C88FEB2007288EF /* ThingStore.swift in Sources */,
+				C3B99BF32C8B952600306DC3 /* ThingView.swift in Sources */,
+				C38358DB2C8903DC007288EF /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
