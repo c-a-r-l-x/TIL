@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct AddThingView: View {
+  @EnvironmentObject private var someThings: ThingStore
   @State private var short = ""
   @State private var long = ""
-  @ObservedObject var someThings: ThingStore
   @FocusState private var thingIsFocused: Bool
   @Environment(\.dismiss) var dismiss
   
@@ -36,5 +36,6 @@ struct AddThingView: View {
 }
 
 #Preview {
-  AddThingView(someThings: ThingStore())
+  AddThingView()
+    .environmentObject(ThingStore())
 }

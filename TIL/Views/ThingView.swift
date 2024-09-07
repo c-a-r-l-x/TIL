@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ThingView: View {
   let thing: Thing
+  @State private var showAddThing = false
   
   var body: some View {
     VStack {
@@ -10,6 +11,19 @@ struct ThingView: View {
       Spacer()
     }
     .padding()
+    .sheet(isPresented: $showAddThing) {
+      AddThingView()
+    }
+    .toolbar {
+      ToolbarItem {
+        Button(action: {
+          showAddThing.toggle()
+        }, label: {
+          Image(systemName: "plus.circle")
+            .font(.title)
+        })
+      }
+    }
   }
 }
 

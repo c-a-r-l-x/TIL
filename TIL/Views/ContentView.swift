@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var myThings = ThingStore()
+  @EnvironmentObject private var myThings: ThingStore
   @State private var showAddThing = false
   
   var body: some View {
@@ -31,11 +31,12 @@ struct ContentView: View {
       }
     }
     .sheet(isPresented: $showAddThing) {
-      AddThingView(someThings: myThings)
+      AddThingView()
     }
   }
 }
 
 #Preview {
   ContentView()
+    .environmentObject(ThingStore())
 }
